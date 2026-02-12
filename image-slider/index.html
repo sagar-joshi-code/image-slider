@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Slider</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+  <div class="bg-white p-4 rounded-xl shadow-lg w-[320px]">
+
+    <h1 class="text-center text-xl font-bold mb-4">
+      Image Slider
+    </h1>
+
+    <!-- Image container -->
+    <div class="relative overflow-hidden rounded-lg">
+      <img
+        id="sliderImage"
+        src="https://picsum.photos/300/200?random=1"
+        class="w-full h-[200px] object-cover"
+        alt="slider image"
+      />
+
+      <!-- Previous button -->
+      <button
+        id="prevBtn"
+        class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/60 text-white px-3 py-1 rounded"
+      >
+        ◀
+      </button>
+
+      <!-- Next button -->
+      <button
+        id="nextBtn"
+        class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/60 text-white px-3 py-1 rounded"
+      >
+        ▶
+      </button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
